@@ -427,13 +427,9 @@ export async function fetchData(): Promise<string> {
 
 **Before ANY command**, ensure you're in the correct environment:
 
+Use conda:
 ```bash
-# For conda/mamba/micromamba (replace `conda` with `mamba` or `micromamba` depending on the prompter's preferred tool):
-conda activate <environment-name>
-
-# For venv:
-source <path-to-venv>/bin/activate  # On macOS/Linux
-<path-to-venv>\Scripts\activate.bat # On Windows
+conad activate jupytercon2025
 ```
 
 **All `jlpm`, `pip`, and `jupyter` commands MUST run within the activated environment.**
