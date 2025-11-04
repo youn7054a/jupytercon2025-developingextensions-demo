@@ -3,3 +3,132 @@
 
     https://jupyterlab.readthedocs.io/en/stable/developer/css.html
 */
+
+/* Image Caption Widget Styles */
+.jp-image-caption-widget {
+  padding: 16px;
+  overflow: auto;
+}
+
+/* Controls Container */
+.jp-image-controls {
+  background: var(--jp-layout-color1);
+  border: 1px solid var(--jp-border-color1);
+  border-radius: 4px;
+  padding: 16px;
+  margin-bottom: 20px;
+}
+
+/* Control Group */
+.jp-control-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  gap: 12px;
+}
+
+.jp-control-group:last-of-type {
+  margin-bottom: 16px;
+}
+
+.jp-control-group label {
+  min-width: 120px;
+  font-weight: 500;
+  color: var(--jp-ui-font-color1);
+  font-size: var(--jp-ui-font-size1);
+}
+
+/* Sliders */
+.jp-slider {
+  flex: 1;
+  height: 6px;
+  border-radius: 3px;
+  background: var(--jp-layout-color3);
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.jp-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--jp-brand-color1);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.jp-slider::-webkit-slider-thumb:hover {
+  background: var(--jp-brand-color0);
+  transform: scale(1.1);
+}
+
+.jp-slider::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: var(--jp-brand-color1);
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.jp-slider::-moz-range-thumb:hover {
+  background: var(--jp-brand-color0);
+  transform: scale(1.1);
+}
+
+/* Slider Value Display */
+.jp-slider-value {
+  min-width: 50px;
+  text-align: right;
+  font-family: var(--jp-code-font-family);
+  font-size: var(--jp-ui-font-size1);
+  color: var(--jp-ui-font-color2);
+}
+
+/* Reset Button */
+.jp-reset-button {
+  padding: 8px 16px;
+  background: var(--jp-brand-color1);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: var(--jp-ui-font-size1);
+  font-weight: 500;
+  transition: all 0.2s ease;
+  width: 100%;
+}
+
+.jp-reset-button:hover {
+  background: var(--jp-brand-color0);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.jp-reset-button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* Image Display */
+.jp-image-display {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  margin: 20px 0;
+}
+
+/* Caption */
+.jp-image-caption {
+  font-size: var(--jp-ui-font-size2);
+  color: var(--jp-ui-font-color1);
+  font-style: italic;
+  margin-top: 12px;
+  line-height: 1.5;
+}
